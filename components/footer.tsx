@@ -10,13 +10,14 @@ export function Footer() {
   const { socialMedia, contact, offices } = siteConfig
 
   return (
-    <footer className="bg-sidebar text-sidebar-foreground border-t border-sidebar-border">
+    <footer className="bg-sidebar text-sidebar-foreground border-t border-sidebar-border relative overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(255,255,255,0.09),transparent_32%),radial-gradient(circle_at_80%_100%,rgba(255,255,255,0.08),transparent_38%)]"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg overflow-hidden">
+              <div className="w-10 h-10 rounded-xl overflow-hidden ring-2 ring-white/10">
                 <Image
                   src="/images.png"
                   alt="Orca Middle East logo"
@@ -95,7 +96,7 @@ export function Footer() {
                   href={socialMedia.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-sidebar-primary rounded-lg flex items-center justify-center text-sidebar-primary-foreground hover:opacity-80 transition-opacity"
+                  className="w-10 h-10 bg-sidebar-primary rounded-xl flex items-center justify-center text-sidebar-primary-foreground hover:opacity-80 transition-opacity"
                   aria-label="Follow us on Facebook"
                 >
                   <Facebook className="w-5 h-5" />
@@ -106,7 +107,7 @@ export function Footer() {
                   href={socialMedia.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-sidebar-primary rounded-lg flex items-center justify-center text-sidebar-primary-foreground hover:opacity-80 transition-opacity"
+                  className="w-10 h-10 bg-sidebar-primary rounded-xl flex items-center justify-center text-sidebar-primary-foreground hover:opacity-80 transition-opacity"
                   aria-label="Follow us on LinkedIn"
                 >
                   <Linkedin className="w-5 h-5" />
@@ -117,7 +118,7 @@ export function Footer() {
                   href={socialMedia.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-sidebar-primary rounded-lg flex items-center justify-center text-sidebar-primary-foreground hover:opacity-80 transition-opacity"
+                  className="w-10 h-10 bg-sidebar-primary rounded-xl flex items-center justify-center text-sidebar-primary-foreground hover:opacity-80 transition-opacity"
                   aria-label="Follow us on Twitter"
                 >
                   <Twitter className="w-5 h-5" />
@@ -128,7 +129,7 @@ export function Footer() {
                   href={socialMedia.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-sidebar-primary rounded-lg flex items-center justify-center text-sidebar-primary-foreground hover:opacity-80 transition-opacity"
+                  className="w-10 h-10 bg-sidebar-primary rounded-xl flex items-center justify-center text-sidebar-primary-foreground hover:opacity-80 transition-opacity"
                   aria-label="Follow us on Instagram"
                 >
                   <Instagram className="w-5 h-5" />

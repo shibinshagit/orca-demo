@@ -16,22 +16,22 @@ const teamMembers = [
   {
     name: 'Mohammed Al Maktoum',
     role: 'Chief Executive Officer',
-    image: '/team-photo.jpg',
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Fatima Al Zahra',
     role: 'Chief Operations Officer',
-    image: '/team-photo.jpg',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Ahmed Hassan',
     role: 'Director of Projects',
-    image: '/team-photo.jpg',
+    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Layla Al Mansouri',
     role: 'Head of Safety & Compliance',
-    image: '/team-photo.jpg',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80',
   },
 ]
 

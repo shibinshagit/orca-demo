@@ -68,19 +68,19 @@ const testimonials = [
     name: 'Ahmed Al Mansouri',
     company: 'Major Construction Developer',
     text: 'Orca Middle East delivered exceptional results on our infrastructure project. Their professionalism and expertise are unmatched.',
-    image: 'https://randomuser.me/api/portraits/men/32.jpg',
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80',
   },
   {
     name: 'Fatima Al Zahra',
     company: 'Oil & Gas Solutions',
     text: 'Reliable, efficient, and always on-time. We continue to partner with Orca for all our transport and equipment needs.',
-    image: 'https://randomuser.me/api/portraits/women/44.jpg',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
   },
   {
     name: 'Hassan Al Qahwati',
     company: 'Government Infrastructure',
     text: 'Their commitment to safety and quality makes them our preferred contractor for major government projects.',
-    image: 'https://randomuser.me/api/portraits/men/76.jpg',
+    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80',
   },
 ]
 
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-12">
-              <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Link href="/services">Explore All Services</Link>
               </Button>
             </div>
@@ -154,11 +154,11 @@ export default function Home() {
         </section>
 
         {/* Stats Section */}
-        <section className="py-16 md:py-24 bg-primary/5">
+        <section className="py-16 md:py-24 bg-muted/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center">
+                <div key={index} className="text-center interactive-card rounded-2xl px-4 py-6">
                   <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                     {stat.number}
                   </div>
@@ -194,12 +194,12 @@ export default function Home() {
                   <Link href="/portfolio">View More Projects</Link>
                 </Button>
               </div>
-              <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl group">
                 <Image
                   src="/portfolio-1.jpg"
                   alt="Featured project"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
             </div>
@@ -207,15 +207,15 @@ export default function Home() {
         </section>
 
         {/* Equipment Section */}
-        <section className="py-16 md:py-24 bg-primary/5">
+        <section className="py-16 md:py-24 bg-muted/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl group">
                 <Image
                   src="/equipment-fleet.jpg"
                   alt="Equipment fleet"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div>
@@ -235,7 +235,7 @@ export default function Home() {
                     ),
                   )}
                 </ul>
-                <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
                   <Link href="/equipment">Browse Equipment</Link>
                 </Button>
               </div>
@@ -257,7 +257,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="bg-card border border-border rounded-lg p-8">
+                <div key={index} className="interactive-card rounded-2xl p-8">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border border-border">
                       <Image
@@ -283,7 +283,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-primary/80">
+        <section className="py-16 md:py-24 bg-gradient-to-r from-primary via-primary to-primary/85">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
               Ready to Get Started?
@@ -303,7 +303,7 @@ export default function Home() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-primary-foreground text-black hover:bg-primary-foreground/10"
+                className="border-primary-foreground/70 text-black hover:text-black hover:bg-primary-foreground/10"
               >
                 <Link href="tel:+971XXXXXXXXX">Call Us</Link>
               </Button>
