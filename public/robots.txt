@@ -1,0 +1,15 @@
+# Orca Middle East - robots.txt
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://orca-me.com/sitemap.xml
+
+# Disallow specific paths if needed
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl delay (optional - 1 second between requests)
+Crawl-delay: 1
